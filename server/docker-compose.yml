@@ -20,8 +20,9 @@ services:
                 links:
                       — zabbix-server:zabbix-server
                 environment:
-                DB_SERVER_HOST: 127.0.0.1
-                MYSQL_USER: 'zabbix'
-                MYSQL_PASSWORD: 'zabbix'
-                ZBX_SERVER_HOST: 127.0.0.1
+                        DB_SERVER_HOST: 127.0.0.1
+                        MYSQL_USER: 'zabbix'
+                        MYSQL_PASSWORD: 'zabbix'
+                        ZBX_SERVER_HOST: 127.0.0.1
+                        
         PHP_TZ: 'Asia/Dhaka'
