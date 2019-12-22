@@ -5,8 +5,8 @@ services:
                 restart: always
                 image: zabbix/zabbix-server-mysql:latest
                 ports:
-                        — “10050:10050”
-                        — “10051:10051”
+                        — 10050:10050
+                        — 10051:10051
                 environment:
                         DB_SERVER_HOST: 127.0.0.1
                         MYSQL_USER: 'zabbix'
@@ -16,7 +16,7 @@ services:
                 restart: always
                 image: zabbix/zabbix-web-nginx-mysql:latest
                 ports:
-                        — “80:80”
+                        — 80:80
                 links:
                       — zabbix-server:zabbix-server
                 environment:
